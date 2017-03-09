@@ -87,21 +87,26 @@ public class QuickSort
     }
 
     public static int partition( int[] arr, int left , int right){
-	int pivot = arr[left];
-	while (left<right){
-	    while (arr[left] < pivot)
-		left++;
-	    while (arr[right] > pivot)
-		right--;
-	    if (left<right){
-		swap(left , right  , arr);
-		//for duplicates 
-		if (arr[left] == arr[right])
-		    left++;
-	    }
-	}
-	return left;//return any one
+	int pivVal = arr[left];
+        int temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
+        int pivFinalpos = left;
+        for (int i=left; i<right; i++){
+            if (arr[i]<pivVal){
+                int temp2 = arr[pivFinalpos];
+                arr[pivFinalpos] = arr[i];
+                arr[i] = temp2;
+                pivFinalpos+=1;
+            }
+        }
+        int temp3 = arr[pivFinalpos];
+        arr[pivFinalpos] = arr[right];
+        arr[right] = temp3;
+	return pivFinalpos;//return any one
     }
+	
+
     
     
 
