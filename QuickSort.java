@@ -74,6 +74,9 @@ public class QuickSort
      * void qsort(int[])
      * @param d -- array of ints to be sorted in place
      *****************************************************/
+    public static void qsort( int[] arr){
+	qsort(arr, 0, arr.length-1);
+    }
     public static void qsort( int[] arr, int left, int right){
 	int pivot = partition(arr,left,right);
 	if (left < pivot - 1)
@@ -136,7 +139,7 @@ public class QuickSort
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-	/*~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
+	//~~~~s~l~i~d~e~~~m~e~~~d~o~w~n~~~~~~~~~~~~~~~~~~~~ (C-k, C-k, C-y) 
 
 	//get-it-up-and-running, static test case w/ dupes:
 	int [] arr2 = {7,1,5,12,3,7};
@@ -163,7 +166,7 @@ public class QuickSort
 	qsort( arrMatey );
 	System.out.println("arrMatey after sort: " );
 	printArr(arrMatey);
-	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+//	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     }//end main
 
