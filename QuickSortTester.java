@@ -1,6 +1,11 @@
 public class QuickSortTester 
 {
-    
+    /*
+    This tester works by traversing through an array of numbers which represent the length of an array to be sorted. 
+    Next, a randomly generated array will be sorted batch times (100 in our testing), and we used the average of the 100
+    measurements for our data points. We used the built in System.current and ran it only during the quicksort section to 
+    generate meaningful numbers.
+    */
     public static final int[] NUMS = {1,10,100,1000,5000,10000,50000,100000,500000,1000000,2500000,5000000,7500000,10000000};
 	
     /******************************
