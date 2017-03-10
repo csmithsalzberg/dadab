@@ -2,7 +2,7 @@
 
 ##**How it Works**
 
-The quick sort algorithm is a divide-and-conquer method utilizing recursion to sort an array. On every pass, a pivot is chosen. Then, the smaller elements on the inspected part of the area are moved to the left of the pivot, and the larger numbers are moved to the right. The algorithm is called again on the left and right sides of the partition. Once the pivot is at the same index as the left and the right bounds, it means that for every element in the array, the numbers to the right are greater than, and the numbers to the left are less than. Thus, the array is sorted.
+The quick sort algorithm is a divide-and-conquer method utilizing recursion to sort an array. On every pass, a pivot is chosen. Then, the smaller elements on the inspected part of the area are moved to the left of the pivot, and the larger numbers are moved to the right. The algorithm is called again on the left and right sides of the partition. Once the pivot is one index away from the left **and** the right bounds, it means that for every element in the array, the numbers to the right of the element are greater than it, and the numbers to the left are less than it. Thus, the array is sorted.
 
 ##**Big O Classification**
 O(nlogn) on average.
