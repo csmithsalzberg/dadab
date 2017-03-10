@@ -30,7 +30,7 @@ public class MergeSortTester
 
 		// begin sort
 		long startTime = System.currentTimeMillis();
-		MergeSort.sort(arr);
+		QuickSort.qsort(arr);
 		long elapsedTime = System.currentTimeMillis() - startTime;
 
 		// O(n) operation for time reference
